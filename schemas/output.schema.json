@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "execution_mode": {
+      "type": "string",
+      "enum": [
+        "strict_model_workflow",
+        "local_deterministic",
+        "manual"
+      ]
+    },
+    "execution_note": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "zh",
+        "en",
+        "bilingual"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ready_for_human_review",
+        "needs_human_review",
+        "failed"
+      ]
+    },
+    "ai_slop_score": {
+      "type": "number"
+    },
+    "pass_score": {
+      "type": "number"
+    },
+    "round": {
+      "type": "number"
+    },
+    "main_problem": {
+      "type": "string"
+    },
+    "issues": {
+      "type": "array"
+    },
+    "rewrite_brief": {
+      "type": "string"
+    },
+    "final_text": {
+      "type": "string"
+    },
+    "judge_result": {
+      "type": "object"
+    },
+    "viral_judge_result": {
+      "type": "object"
+    },
+    "rule_scan": {
+      "type": "object"
+    },
+    "versions": {
+      "type": "object"
+    },
+    "structure_json": {
+      "type": "object"
+    },
+    "platform_output": {
+      "$ref": "platform_output.schema.json"
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "style_template_path": {
+      "type": "string"
+    },
+    "human_review_checklist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content_context": {
+      "type": "object"
+    },
+    "editorial_review": {
+      "type": "object"
+    },
+    "candidate_comparison": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "ok",
+    "title",
+    "status",
+    "language",
+    "final_text",
+    "ai_slop_score",
+    "platform_output"
+  ]
+}

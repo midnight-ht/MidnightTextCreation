@@ -1,0 +1,10 @@
+{
+  "job_id": "example-editorial-001",
+  "platform": "wechat",
+  "variant_id": "A",
+  "published_at": "2026-10-04T10:00:00+08:00",
+  "window_end": "2026-10-05T10:00:00+08:00",
+  "experiment_design": "observational",
+  "metrics": {"impressions": 1000, "clicks": 100, "reads": 100, "completions": 40, "saves": 8},
+  "note": "Synthetic example; not real publication results."
+}

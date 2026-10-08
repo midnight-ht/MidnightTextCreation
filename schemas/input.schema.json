@@ -1,0 +1,1104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "文章标题或主题"
+    },
+    "topic": {
+      "type": "string",
+      "description": "可作为 title 的备用字段"
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "wechat",
+        "toutiao",
+        "xiaohongshu",
+        "douyin_long_text",
+        "douyin_video",
+        "wechat_channels",
+        "weibo",
+        "zhihu",
+        "bilibili",
+        "bilibili_video",
+        "baijiahao",
+        "kuaishou",
+        "juejin",
+        "csdn",
+        "jianshu",
+        "medium",
+        "substack",
+        "linkedin",
+        "linkedin_article",
+        "x_thread",
+        "threads",
+        "instagram",
+        "instagram_reels",
+        "tiktok",
+        "youtube_community",
+        "youtube",
+        "youtube_shorts",
+        "facebook",
+        "reddit",
+        "pinterest",
+        "quora",
+        "blog",
+        "seo_article",
+        "generic"
+      ],
+      "default": "generic"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "zh",
+        "en",
+        "bilingual"
+      ],
+      "default": "zh"
+    },
+    "target_reader": {
+      "type": "string"
+    },
+    "content_goal": {
+      "type": "string"
+    },
+    "raw_material": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "core_opinion": {
+      "type": "string"
+    },
+    "tone": {
+      "type": "string"
+    },
+    "forbidden_style": {
+      "type": "string"
+    },
+    "personal_examples": {
+      "type": "string"
+    },
+    "style_template": {
+      "type": "string"
+    },
+    "output_dir": {
+      "type": "string"
+    },
+    "platform_configs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "wechat": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "toutiao": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "xiaohongshu": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "carousel",
+                "short_post",
+                "text",
+                "spoken",
+                "thread",
+                "long_form"
+              ]
+            }
+          }
+        },
+        "douyin_long_text": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "carousel",
+                "short_post",
+                "text",
+                "spoken",
+                "thread",
+                "long_form"
+              ]
+            }
+          }
+        },
+        "douyin_video": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "short_post",
+                "text",
+                "long_form",
+                "thread"
+              ]
+            }
+          }
+        },
+        "wechat_channels": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "short_post",
+                "text",
+                "long_form",
+                "thread"
+              ]
+            }
+          }
+        },
+        "weibo": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "short_post",
+                "text",
+                "thread",
+                "long_form",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "zhihu": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "bilibili": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "bilibili_video": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "short_post",
+                "text",
+                "long_form",
+                "thread"
+              ]
+            }
+          }
+        },
+        "baijiahao": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "kuaishou": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "carousel",
+                "short_post",
+                "text",
+                "thread",
+                "long_form"
+              ]
+            }
+          }
+        },
+        "juejin": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "csdn": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "jianshu": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "medium": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "substack": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "linkedin": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "short_post",
+                "text",
+                "thread",
+                "long_form",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "linkedin_article": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "x_thread": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "thread",
+                "short_post",
+                "text",
+                "long_form",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "threads": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "thread",
+                "short_post",
+                "text",
+                "long_form",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "instagram": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "carousel",
+                "short_post",
+                "text",
+                "spoken",
+                "thread",
+                "long_form"
+              ]
+            }
+          }
+        },
+        "instagram_reels": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "short_post",
+                "text",
+                "long_form",
+                "thread"
+              ]
+            }
+          }
+        },
+        "tiktok": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "carousel",
+                "short_post",
+                "text",
+                "thread",
+                "long_form"
+              ]
+            }
+          }
+        },
+        "youtube_community": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "short_post",
+                "text",
+                "thread",
+                "long_form",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "youtube": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "short_post",
+                "text",
+                "long_form",
+                "thread"
+              ]
+            }
+          }
+        },
+        "youtube_shorts": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "script",
+                "spoken",
+                "short_post",
+                "text",
+                "long_form",
+                "thread"
+              ]
+            }
+          }
+        },
+        "facebook": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "short_post",
+                "text",
+                "thread",
+                "long_form",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "reddit": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "short_post",
+                "text",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "pinterest": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "carousel",
+                "short_post",
+                "text",
+                "spoken",
+                "thread",
+                "long_form"
+              ]
+            }
+          }
+        },
+        "quora": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "short_post",
+                "text",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "blog": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "seo_article": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        },
+        "generic": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "zh",
+                "en",
+                "bilingual"
+              ]
+            },
+            "tone": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "long_form",
+                "text",
+                "short_post",
+                "thread",
+                "spoken"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "max_rounds": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 2
+    },
+    "pass_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 25
+    },
+    "author_samples": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "claim",
+          "source"
+        ]
+      }
+    },
+    "forbidden_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_thresholds": {
+      "type": "object",
+      "properties": {
+        "style_min_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "expression_min_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "distribution_min_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "viral_min_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "style_guidance": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken",
+        "carousel",
+        "script"
+      ]
+    },
+    "cover_text": {
+      "type": "string"
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "title"
+      ]
+    },
+    {
+      "required": [
+        "topic"
+      ]
+    }
+  ]
+}

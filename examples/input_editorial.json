@@ -1,0 +1,12 @@
+{
+  "title": "发布前怎样检查 AI 初稿",
+  "platform": "wechat",
+  "language": "zh",
+  "target_reader": "内容编辑",
+  "core_opinion": "先检查判断和事实，再修词句",
+  "raw_material": "编辑先核对来源，再检查开头承诺有没有兑现。这里是方法建议，不包含效果数据。",
+  "author_samples": ["改稿时我会先问：这句话凭什么成立？如果答不上来，再顺的句子也先放下。"],
+  "facts": [],
+  "forbidden_claims": ["保证十万加"],
+  "max_rounds": 2
+}

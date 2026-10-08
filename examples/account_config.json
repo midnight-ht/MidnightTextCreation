@@ -1,0 +1,73 @@
+{
+  "accounts": [
+    {
+      "id": "demo",
+      "name": "演示内容账号",
+      "enabled": true,
+      "output_dir": "exports"
+    }
+  ],
+  "styles": [
+    {
+      "id": "essay",
+      "name": "实用长文",
+      "language": "zh",
+      "format": "long_form",
+      "tone": "直接、克制",
+      "target_reader": "需要解决具体问题的读者",
+      "style_guidance": "先给具体判断，再给证据和适用边界。",
+      "author_samples": [],
+      "forbidden_claims": [
+        "保证十万加"
+      ]
+    },
+    {
+      "id": "note",
+      "name": "实用短帖",
+      "language": "zh",
+      "format": "short_post",
+      "tone": "自然、清晰",
+      "style_guidance": "短段落，一段一个判断；不虚构个人经历。",
+      "author_samples": [],
+      "forbidden_claims": []
+    }
+  ],
+  "bindings": [
+    {
+      "id": "demo-wechat",
+      "account_id": "demo",
+      "platform": "wechat",
+      "expected_account": "演示内容账号",
+      "style_id": "essay",
+      "adapter": {
+        "mode": "mock",
+        "mock_status": "processing",
+        "mock_metrics": {}
+      }
+    },
+    {
+      "id": "demo-toutiao",
+      "account_id": "demo",
+      "platform": "toutiao",
+      "expected_account": "演示内容账号",
+      "style_id": "essay",
+      "adapter": {
+        "mode": "mock",
+        "mock_status": "processing",
+        "mock_metrics": {}
+      }
+    },
+    {
+      "id": "demo-xiaohongshu",
+      "account_id": "demo",
+      "platform": "xiaohongshu",
+      "expected_account": "演示内容账号",
+      "style_id": "note",
+      "adapter": {
+        "mode": "mock",
+        "mock_status": "processing",
+        "mock_metrics": {}
+      }
+    }
+  ]
+}

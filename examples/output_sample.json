@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "job_id": "sample_001",
+  "title": "如何去掉 AI 写作味",
+  "platform": "wechat",
+  "status": "needs_human_review",
+  "final_text": "示例输出正文",
+  "ai_slop_score": 68,
+  "pass_score": 25,
+  "round": 1,
+  "judge_result": {
+    "ai_slop_score": 68,
+    "verdict": "rewrite",
+    "main_problem": "开头和结尾都过于通用，缺少具体判断。",
+    "issues": [],
+    "rewrite_brief": "删除宏大开头，直接从用户为什么觉得 AI 文案假开始。"
+  },
+  "rule_scan": {},
+  "versions": {},
+  "platform_output": {
+    "title_options": [
+      "为什么 AI 文案一眼假？问题不在词，而在结构"
+    ],
+    "summary": "示例摘要",
+    "body": "示例正文",
+    "tags": [
+      "AI写作",
+      "内容创作"
+    ],
+    "cover_prompt": "中文内容编辑工作台，屏幕上显示红色批注和文章结构",
+    "publish_notes": "需要人工终审。"
+  },
+  "human_review_checklist": []
+}

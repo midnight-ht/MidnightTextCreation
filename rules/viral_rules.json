@@ -1,0 +1,59 @@
+{
+  "score_fields": {
+    "title_score": "标题是否把具体问题、利益点、冲突或反向判断说清楚。",
+    "hook_score": "前三行是否进入读者现场，而不是概念铺垫。",
+    "reader_mirror_score": "目标读者是否能看见自己的动作、限制、代价或处境。",
+    "tension_score": "文章是否有清楚的核心矛盾和公平的反方观点。",
+    "specificity_score": "是否有例子、数字、动作、限制、代价或可验证判断。"
+  },
+  "viral_thresholds": {
+    "0-39": "weak: 需要重做选题或补素材。",
+    "40-59": "usable: 可以发布，但传播弱，优先改标题和开头。",
+    "60-79": "strong: 具备传播基础，人工检查可信度和平台表达。",
+    "80-100": "excellent: 标题、开头、张力、读者镜像和具体性都强。"
+  },
+  "hard_rules": [
+    "不要用虚假稀缺、恐吓式标题或无法验证的数据制造爆点。",
+    "标题必须能被正文兑现。",
+    "短平台可以强化钩子，但不能牺牲事实边界。",
+    "长平台可以有争议，但必须给判断依据和适用条件。",
+    "收藏动机来自具体方法、判断标准、清单或案例，不来自空泛鸡血。"
+  ],
+  "platform_defaults": {
+    "wechat": {
+      "hook_rule": "开头用具体场景或反常识判断，不铺时代背景。",
+      "title_rule": "观点明确，可以有冲突，但不要过度标题党。",
+      "share_trigger": "可复用判断、结构清单、职业或创作经验。",
+      "comment_trigger": "围绕常见误区或不同写法展开讨论。",
+      "avoid_clickbait": "避免绝对化、危机化和贩卖焦虑。"
+    },
+    "toutiao": {
+      "hook_rule": "第一段尽快给争议点和现实场景。",
+      "title_rule": "直接点出问题、冲突或反常识。",
+      "share_trigger": "观点鲜明且能解释一个常见现象。",
+      "comment_trigger": "留下可讨论但不撕裂的问题。",
+      "avoid_clickbait": "不要用夸张数字或绝对判断吓人。"
+    },
+    "xiaohongshu": {
+      "hook_rule": "前三行写痛点、结果或具体场景。",
+      "title_rule": "结果导向或痛点导向，少抽象概念。",
+      "share_trigger": "清单、避坑、可直接照做的小方法。",
+      "comment_trigger": "让读者补充自己的场景或失败经验。",
+      "avoid_clickbait": "不要假亲密、假种草、假经验。"
+    },
+    "linkedin": {
+      "hook_rule": "从工作判断、一次决策或一个 tradeoff 进入。",
+      "title_rule": "具体、专业、非夸耀。",
+      "share_trigger": "可被同事或同行引用的判断标准。",
+      "comment_trigger": "围绕决策取舍和边界条件讨论。",
+      "avoid_clickbait": "避免成功学、自我包装和 corporate jargon。"
+    },
+    "generic": {
+      "hook_rule": "从具体问题进入。",
+      "title_rule": "准确表达主题和判断。",
+      "share_trigger": "具体、有用、可信。",
+      "comment_trigger": "没有平台语境时不强行制造评论点。",
+      "avoid_clickbait": "不夸大、不煽动。"
+    }
+  }
+}

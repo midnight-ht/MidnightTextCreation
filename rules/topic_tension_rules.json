@@ -1,0 +1,47 @@
+{
+  "tension_fields": [
+    "宏大变化 vs 个体处境",
+    "主流叙事 vs 私人经验",
+    "效率承诺 vs 真实损耗",
+    "成功学口号 vs 普通人限制",
+    "技术进步 vs 人的失控感",
+    "平台规则 vs 作者真实表达",
+    "短期流量 vs 长期信任"
+  ],
+  "structure_templates": {
+    "conflict_breakdown": {
+      "best_for": ["wechat", "toutiao", "zhihu", "blog"],
+      "flow": ["具体场景", "反常判断", "误区拆解", "真实原因", "可执行判断"],
+      "risk": "容易写成情绪宣泄，必须补判断依据和边界"
+    },
+    "identity_mirror": {
+      "best_for": ["xiaohongshu", "wechat", "linkedin", "substack"],
+      "flow": ["读者处境", "共同困惑", "作者判断", "具体例子", "温和结论"],
+      "risk": "容易假亲密，必须使用真实动作和限制"
+    },
+    "opinion_reversal": {
+      "best_for": ["x_thread", "linkedin", "zhihu", "medium"],
+      "flow": ["常见观点", "我不同意", "为什么错", "更准确的说法", "行动建议"],
+      "risk": "容易标题党，必须说明反转成立的条件"
+    },
+    "experience_review": {
+      "best_for": ["substack", "medium", "wechat", "blog"],
+      "flow": ["一次具体经历", "当时误判", "后来的理解", "方法沉淀", "边界说明"],
+      "risk": "容易自我感动，必须让经历服务判断"
+    }
+  },
+  "reader_mirror_checks": [
+    "是否出现具体读者场景",
+    "是否能让目标读者识别自己",
+    "是否避免空泛群体描述",
+    "是否有真实行为而非抽象标签",
+    "是否写出了限制、代价或取舍"
+  ],
+  "anti_slop_deep_checks": [
+    "这篇文章有没有一个非模板化判断",
+    "例子是否具体到场景、动作、限制",
+    "换一个题目后，这段话是否还能原样使用",
+    "有没有看起来高级但没有承担判断的句子",
+    "是否只是顺滑，而不是更具体"
+  ]
+}

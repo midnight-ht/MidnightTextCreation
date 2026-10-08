@@ -1,0 +1,9 @@
+{
+  "style_min_score": 60,
+  "expression_min_score": 60,
+  "distribution_min_score": 60,
+  "viral_min_score": 40,
+  "calibration_status": "uncalibrated",
+  "policy": "Unknown or failed dimensions require review. Facts cannot be offset by other scores. Scores do not predict reach.",
+  "calibration": "Collect human-reviewed good and bad drafts, including false positives; compare model judgments against held-out examples. Record model and prompt versions. Change thresholds only after human review."
+}

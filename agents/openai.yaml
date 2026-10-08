@@ -1,0 +1,7 @@
+interface:
+  display_name: "midnight advertorial"
+  short_description: "Content review, account profiles, browser draft fill and status collection."
+  brand_color: "#7C3AED"
+  default_prompt: "Use $midnight-advertorial to detect AI-slop issues, rewrite the draft, and output a platform-ready version."
+policy:
+  allow_implicit_invocation: true

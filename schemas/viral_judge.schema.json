@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "viral_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "hook_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "title_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "reader_mirror_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "tension_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "specificity_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "share_reason": {
+      "type": "string"
+    },
+    "comment_trigger": {
+      "type": "string"
+    },
+    "main_viral_gap": {
+      "type": "string"
+    },
+    "fix_brief": {
+      "type": "string"
+    },
+    "clickbait_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "credibility_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    }
+  },
+  "required": [
+    "viral_score",
+    "hook_score",
+    "title_score",
+    "reader_mirror_score",
+    "tension_score",
+    "specificity_score",
+    "share_reason",
+    "comment_trigger",
+    "main_viral_gap",
+    "fix_brief"
+  ]
+}

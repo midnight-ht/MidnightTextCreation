@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Midnight 本机内容助手",
+  "version": "1.0.0",
+  "description": "核对账号后填充草稿或读取发布状态；不点击发布。",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*", "https://mp.weixin.qq.com/*", "https://mp.toutiao.com/*", "https://creator.xiaohongshu.com/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{"matches": ["http://127.0.0.1/*", "http://localhost/*"], "js": ["runner.js", "bridge.js"], "run_at": "document_idle", "all_frames": false}]
+}

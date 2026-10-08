@@ -1,0 +1,1554 @@
+{
+  "_viral_rules": {
+    "hook_rule": "前三行必须进入具体读者场景、冲突或反常识判断。",
+    "title_rule": "标题至少满足一个条件：具体问题、明确利益、反向判断、读者痛点。",
+    "share_trigger": "转发理由来自可复用判断、方法、清单、案例或身份认同。",
+    "comment_trigger": "评论理由来自公平争议、经验补充、场景差异或边界讨论。",
+    "avoid_clickbait": "禁止虚假稀缺、夸张恐吓、无法兑现的数字和不负责任的绝对化。"
+  },
+  "wechat": {
+    "tone": "有观点、有结构、有经验感",
+    "paragraph": "中等长度，允许深度展开",
+    "title": "观点明确，不要标题党过猛",
+    "structure": "适合 conflict_breakdown 或 experience_review；每一节都要推进判断。",
+    "opening": "用具体场景或反常识判断开头，不写宏大时代背景。",
+    "ending": "停在具体建议、限制条件或下一步动作，不强行升华。",
+    "visual": {
+      "cover_ratio": "2.35:1",
+      "default_style": "editorial",
+      "rule": "封面图应表达核心矛盾或具体场景，不做装饰性配图。"
+    },
+    "notes": [
+      "适合方法论拆解",
+      "保留清晰小标题",
+      "每节必须有新信息或新判断",
+      "结尾给具体建议"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "微信公众号",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "使用原生标题、摘要、正文与封面；小标题、引用、图片说明逐项检查，不假定粘贴 Markdown 自动渲染。"
+    }
+  },
+  "toutiao": {
+    "tone": "直接、有冲突、有讨论点",
+    "paragraph": "短中段落，避免学术腔",
+    "title": "更直接，突出问题和反常识",
+    "structure": "适合 conflict_breakdown；冲突和判断前置。",
+    "opening": "开头尽快进入问题，不铺垫概念。",
+    "ending": "可以留下评论区可讨论的问题，但不要诱导争吵。",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "documentary",
+      "rule": "优先使用具体现实场景。"
+    },
+    "notes": [
+      "开头要快",
+      "多给场景",
+      "保留争议点但要有依据",
+      "结尾可引导评论"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "今日头条",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "文章与微头条分开：长文用 long_form，短动态用 short_post；标题准确，证据前置。"
+    }
+  },
+  "xiaohongshu": {
+    "tone": "实用、轻口语、强场景",
+    "paragraph": "短段落，前三行抓人",
+    "title": "结果导向或痛点导向",
+    "structure": "适合 identity_mirror；先让读者看见自己，再给方法。",
+    "opening": "前三行给场景、结果或痛点，不写理论。",
+    "ending": "给可操作提醒，标签不超过 5 个。",
+    "visual": {
+      "cover_ratio": "3:4",
+      "default_style": "hand-drawn",
+      "rule": "适合社交卡片图，画面要表达痛点或前后变化。"
+    },
+    "notes": [
+      "必须有标签",
+      "少用长句",
+      "适合清单但不要机械",
+      "不要假亲密和夸张种草腔"
+    ],
+    "layout": {
+      "default_format": "carousel",
+      "formats": [
+        "carousel",
+        "short_post",
+        "text",
+        "spoken",
+        "thread",
+        "long_form"
+      ],
+      "content_order": [
+        "封面明确主题且能兑现",
+        "首张给场景与阅读理由",
+        "中间每张一个证据或步骤",
+        "末张给边界或行动",
+        "说明文字与相关标签"
+      ],
+      "paragraph_method": "卡片内一个主题；正文说明分短段，不把整篇长文塞入封面。",
+      "emphasis_method": "封面主题、卡片标题、正文三级层次；字号与对比度以手机预览可读为准。",
+      "media_method": "卡片序号连续、版式一致；检查平台裁切和安全区，不把推荐比例写成唯一允许尺寸。",
+      "publishing_steps": [
+        "按 blocks 顺序制作卡片并逐张复核",
+        "标题、说明、标签分别填写",
+        "预览封面裁切与每张可读性",
+        "检查事实、图片权利及商业披露"
+      ],
+      "local_style": "short",
+      "label": "小红书",
+      "region": "domestic",
+      "family": "carousel",
+      "native_note": "区分图文卡片、文字说明和口播；标签仅取自实际主题，正文必须兑现封面承诺。"
+    }
+  },
+  "douyin_long_text": {
+    "tone": "口语、节奏强、适合朗读",
+    "paragraph": "短句短段，便于配图或口播",
+    "title": "强问题意识",
+    "structure": "适合 identity_mirror 或 conflict_breakdown；一句话一个动作。",
+    "opening": "第一句直接给冲突或结果。",
+    "ending": "落在一个动作建议，不做长总结。",
+    "visual": {
+      "cover_ratio": "3:4",
+      "default_style": "documentary",
+      "rule": "便于图文或口播分镜。"
+    },
+    "notes": [
+      "可以转成口播",
+      "开头直接给冲突",
+      "避免密集理论"
+    ],
+    "layout": {
+      "default_format": "carousel",
+      "formats": [
+        "carousel",
+        "short_post",
+        "text",
+        "spoken",
+        "thread",
+        "long_form"
+      ],
+      "content_order": [
+        "封面明确主题且能兑现",
+        "首张给场景与阅读理由",
+        "中间每张一个证据或步骤",
+        "末张给边界或行动",
+        "说明文字与相关标签"
+      ],
+      "paragraph_method": "卡片内一个主题；正文说明分短段，不把整篇长文塞入封面。",
+      "emphasis_method": "封面主题、卡片标题、正文三级层次；字号与对比度以手机预览可读为准。",
+      "media_method": "卡片序号连续、版式一致；检查平台裁切和安全区，不把推荐比例写成唯一允许尺寸。",
+      "publishing_steps": [
+        "按 blocks 顺序制作卡片并逐张复核",
+        "标题、说明、标签分别填写",
+        "预览封面裁切与每张可读性",
+        "检查事实、图片权利及商业披露"
+      ],
+      "local_style": "short",
+      "label": "抖音图文",
+      "region": "domestic",
+      "family": "carousel",
+      "native_note": "图文每张一个语义单位，说明短而具体；口播请选 spoken 或使用 douyin_video。"
+    }
+  },
+  "zhihu": {
+    "tone": "有推理链、有专业判断，但避免空泛争辩",
+    "paragraph": "中长段落，按论证推进",
+    "title": "问题导向，少标题党",
+    "structure": "适合 conflict_breakdown 或 opinion_reversal；必须说明边界条件。",
+    "opening": "先界定问题，再说明常见回答的问题。",
+    "ending": "总结判断适用范围，不煽动站队。",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "infographic",
+      "rule": "只有在概念关系复杂时才需要信息图。"
+    },
+    "notes": [
+      "说明判断依据",
+      "保留限制条件",
+      "避免只给情绪立场"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "知乎",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "回答先直接回应问题，专栏另填标题；推理、证据、反例和适用范围分层呈现。"
+    }
+  },
+  "bilibili": {
+    "tone": "自然、有画面感，适合视频或专栏",
+    "paragraph": "段落不要太密，例子便于视觉化",
+    "title": "清楚表达主题和看点",
+    "structure": "适合 experience_review 或 conflict_breakdown；保留可视化例子。",
+    "opening": "用能转成视频开场的场景进入。",
+    "ending": "给观众一个可继续讨论的问题。",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "documentary",
+      "rule": "画面要能作为视频封面或分镜。"
+    },
+    "notes": [
+      "适合转成视频开场",
+      "保留口语节奏",
+      "避免纯理论堆叠"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "哔哩哔哩专栏",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "专栏保留小标题和可视化例子；视频脚本使用 bilibili_video，不混用视频简介与正文。"
+    }
+  },
+  "baijiahao": {
+    "tone": "清晰、稳妥、有信息量",
+    "paragraph": "中等段落，结构清楚",
+    "title": "准确直接",
+    "structure": "适合 generic 或 conflict_breakdown；事实判断要稳。",
+    "opening": "从具体问题进入，不夸大。",
+    "ending": "给稳妥结论和可核查提醒。",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "editorial",
+      "rule": "避免夸张视觉。"
+    },
+    "notes": [
+      "减少夸张表达",
+      "事实判断要可核查",
+      "适合通用长文分发"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "百家号",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "标题与正文事实一致；解释性图片带来源，避免夸张封面。"
+    }
+  },
+  "kuaishou": {
+    "tone": "口语、直接、少包装",
+    "paragraph": "短句短段",
+    "title": "具体问题导向",
+    "structure": "适合 identity_mirror；把问题讲成人话。",
+    "opening": "开头尽快进入生活或工作场景。",
+    "ending": "用一句具体提醒收住。",
+    "visual": {
+      "cover_ratio": "3:4",
+      "default_style": "documentary",
+      "rule": "优先真实感，不追求精致包装。"
+    },
+    "notes": [
+      "适合图文和口播",
+      "避免书面腔",
+      "开头尽快进入场景"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "carousel",
+        "short_post",
+        "text",
+        "thread",
+        "long_form"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "快手",
+      "region": "domestic",
+      "family": "video",
+      "native_note": "用真实生活场景组织口播，图文改用 carousel 时需显式指定；避免过度书面化。"
+    }
+  },
+  "juejin": {
+    "tone": "技术向、具体、少营销",
+    "paragraph": "按问题、原因、方案推进",
+    "title": "准确描述技术问题",
+    "structure": "适合 conflict_breakdown；结论落在工程取舍。",
+    "opening": "用实际 bug、架构选择或开发限制进入。",
+    "ending": "说明方案边界和适用条件。",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "infographic",
+      "rule": "优先流程图、对比图或架构图。"
+    },
+    "notes": [
+      "保留代码或实践细节",
+      "避免泛泛方法论",
+      "结论要落在工程选择上"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "掘金",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "技术文保留 Markdown 小标题、语言标注的代码块、复现步骤、版本和工程取舍。"
+    }
+  },
+  "medium": {
+    "tone": "clear, essay-like, concrete",
+    "paragraph": "medium-length paragraphs with a visible thesis",
+    "title": "specific and readable",
+    "structure": "experience_review or opinion_reversal; keep the thesis visible.",
+    "opening": "start from a scene, decision, or concrete tension.",
+    "ending": "close with a precise observation, not a slogan.",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "editorial",
+      "rule": "avoid translated Chinese platform visual tropes."
+    },
+    "notes": [
+      "avoid literal Chinese platform phrasing",
+      "keep narrative flow",
+      "make claims accountable"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "Medium",
+      "region": "international",
+      "family": "article",
+      "native_note": "标题、副标题与正文分别处理；在 story editor 设置标题层级、引用、列表和链接。"
+    }
+  },
+  "substack": {
+    "tone": "personal, sharp, newsletter-like",
+    "paragraph": "short to medium paragraphs",
+    "title": "point-of-view driven",
+    "structure": "experience_review; authorial judgment should be visible.",
+    "opening": "start from an observation, mistake, or tradeoff.",
+    "ending": "close with a concrete observation.",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "editorial",
+      "rule": "visuals are optional; do not add decorative covers by default."
+    },
+    "notes": [
+      "authorial judgment should be visible",
+      "avoid corporate language",
+      "close with a concrete observation"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "Substack",
+      "region": "international",
+      "family": "article",
+      "native_note": "newsletter 标题和导读考虑邮件阅读；预览邮件和网页，正文保留作者判断与来源。"
+    }
+  },
+  "linkedin": {
+    "tone": "professional, human, concise",
+    "paragraph": "short paragraphs for scanning",
+    "title": "practical and non-clickbait",
+    "structure": "opinion_reversal or experience_review; focus on work decisions and tradeoffs.",
+    "opening": "start with a work observation, decision, or mistake.",
+    "ending": "make the takeaway useful at work.",
+    "visual": {
+      "cover_ratio": "1.91:1",
+      "default_style": "editorial",
+      "rule": "avoid corporate stock-photo energy."
+    },
+    "notes": [
+      "avoid inflated achievement language",
+      "keep examples grounded",
+      "make the takeaway useful at work"
+    ],
+    "layout": {
+      "default_format": "short_post",
+      "formats": [
+        "short_post",
+        "text",
+        "thread",
+        "long_form",
+        "spoken"
+      ],
+      "content_order": [
+        "首屏具体判断或场景",
+        "必要背景",
+        "证据或方法",
+        "适用边界",
+        "有信息价值的讨论问题"
+      ],
+      "paragraph_method": "短段落之间留空行；避免每个词单独一行；列表仅用于并列步骤。",
+      "emphasis_method": "用准确的首句和自然分段强调；不默认 Markdown 会渲染，不使用花体 Unicode 假加粗。",
+      "media_method": "图片只补充上下文；有图片时写清说明和来源。",
+      "publishing_steps": [
+        "首段作为信息流入口，不把独立标题重复粘贴进正文",
+        "链接、标签按编辑器实际能力处理",
+        "预览折叠前首屏与换行",
+        "核对社区规则、事实与商业披露"
+      ],
+      "local_style": "short",
+      "label": "LinkedIn 动态",
+      "region": "international",
+      "family": "feed",
+      "native_note": "短帖首屏给工作判断与证据；长文使用 linkedin_article，避免假加粗字符和成就夸大。"
+    }
+  },
+  "x_thread": {
+    "tone": "compressed, clear, continuous",
+    "paragraph": "one idea per post",
+    "title": "strong first post",
+    "structure": "opinion_reversal; each post must move the argument.",
+    "opening": "first post states the point clearly.",
+    "ending": "last post lands on a specific takeaway.",
+    "visual": {
+      "cover_ratio": "none",
+      "default_style": "none",
+      "rule": "do not require visuals unless user asks."
+    },
+    "notes": [
+      "keep each item self-contained",
+      "avoid thread filler",
+      "maintain continuity"
+    ],
+    "layout": {
+      "default_format": "thread",
+      "formats": [
+        "thread",
+        "short_post",
+        "text",
+        "long_form",
+        "spoken"
+      ],
+      "content_order": [
+        "首条明确主题与承诺",
+        "每条推进一个判断",
+        "依据与实例紧随判断",
+        "末条具体结论与边界"
+      ],
+      "paragraph_method": "每条能独立理解且与前条连贯；不按固定字符机械截断，不遗漏后半篇。",
+      "emphasis_method": "可用连续序号，计数包括序号、链接及平台特殊字符权重。",
+      "media_method": "图与对应条目同发，图注来源紧随图片；无图也应能理解。",
+      "publishing_steps": [
+        "逐条粘贴 blocks 而非整段 body",
+        "以平台编辑器真实计数检查每条长度",
+        "超限回到编辑修订，不静默截断",
+        "检查顺序、上下文、来源和回复权限"
+      ],
+      "local_style": "thread",
+      "label": "X 线程",
+      "region": "international",
+      "family": "thread",
+      "native_note": "普通帖与订阅长帖权限不同；逐条在编辑器核对加权长度，不能只用 Python len 判定合规。"
+    }
+  },
+  "instagram": {
+    "tone": "direct, visual-friendly, concrete",
+    "paragraph": "short caption blocks",
+    "title": "hook with a specific scene",
+    "structure": "identity_mirror; caption should support the visual.",
+    "opening": "specific scene or result first.",
+    "ending": "short CTA or concrete reminder.",
+    "visual": {
+      "cover_ratio": "4:5",
+      "default_style": "hand-drawn",
+      "rule": "visual is central; prompt must be concrete."
+    },
+    "notes": [
+      "tags are useful",
+      "avoid generic motivation",
+      "make the visual cue clear"
+    ],
+    "layout": {
+      "default_format": "carousel",
+      "formats": [
+        "carousel",
+        "short_post",
+        "text",
+        "spoken",
+        "thread",
+        "long_form"
+      ],
+      "content_order": [
+        "封面明确主题且能兑现",
+        "首张给场景与阅读理由",
+        "中间每张一个证据或步骤",
+        "末张给边界或行动",
+        "说明文字与相关标签"
+      ],
+      "paragraph_method": "卡片内一个主题；正文说明分短段，不把整篇长文塞入封面。",
+      "emphasis_method": "封面主题、卡片标题、正文三级层次；字号与对比度以手机预览可读为准。",
+      "media_method": "卡片序号连续、版式一致；检查平台裁切和安全区，不把推荐比例写成唯一允许尺寸。",
+      "publishing_steps": [
+        "按 blocks 顺序制作卡片并逐张复核",
+        "标题、说明、标签分别填写",
+        "预览封面裁切与每张可读性",
+        "检查事实、图片权利及商业披露"
+      ],
+      "local_style": "short",
+      "label": "Instagram 图文",
+      "region": "international",
+      "family": "carousel",
+      "native_note": "区分图片上的卡片文案与 caption；预览网格封面裁切，Reels 另用 instagram_reels。"
+    }
+  },
+  "tiktok": {
+    "tone": "spoken, quick, concrete",
+    "paragraph": "short lines for narration",
+    "title": "immediate hook",
+    "structure": "identity_mirror or conflict_breakdown; works as a script.",
+    "opening": "immediate hook in one spoken sentence.",
+    "ending": "one actionable next step.",
+    "visual": {
+      "cover_ratio": "9:16",
+      "default_style": "documentary",
+      "rule": "visual should imply motion or a scene."
+    },
+    "notes": [
+      "works as a script",
+      "avoid dense explanations",
+      "keep the ending actionable"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "carousel",
+        "short_post",
+        "text",
+        "thread",
+        "long_form"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "TikTok",
+      "region": "international",
+      "family": "video",
+      "native_note": "视频、照片和文字内容分开处理；照片用 carousel，标题说明与口播不混用。"
+    }
+  },
+  "youtube_community": {
+    "tone": "conversational, clear, lightly opinionated",
+    "paragraph": "short community-post paragraphs",
+    "title": "plain and concrete",
+    "structure": "opinion_reversal or identity_mirror; invite discussion without bait.",
+    "opening": "plain observation or question.",
+    "ending": "ask for specific experience, not generic opinions.",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "editorial",
+      "rule": "optional visual, useful only when it adds context."
+    },
+    "notes": [
+      "invite discussion without bait",
+      "avoid generic inspiration",
+      "keep claims specific"
+    ],
+    "layout": {
+      "default_format": "short_post",
+      "formats": [
+        "short_post",
+        "text",
+        "thread",
+        "long_form",
+        "spoken"
+      ],
+      "content_order": [
+        "首屏具体判断或场景",
+        "必要背景",
+        "证据或方法",
+        "适用边界",
+        "有信息价值的讨论问题"
+      ],
+      "paragraph_method": "短段落之间留空行；避免每个词单独一行；列表仅用于并列步骤。",
+      "emphasis_method": "用准确的首句和自然分段强调；不默认 Markdown 会渲染，不使用花体 Unicode 假加粗。",
+      "media_method": "图片只补充上下文；有图片时写清说明和来源。",
+      "publishing_steps": [
+        "首段作为信息流入口，不把独立标题重复粘贴进正文",
+        "链接、标签按编辑器实际能力处理",
+        "预览折叠前首屏与换行",
+        "核对社区规则、事实与商业披露"
+      ],
+      "local_style": "short",
+      "label": "YouTube 社区帖",
+      "region": "international",
+      "family": "feed",
+      "native_note": "围绕具体观察或真实问题组织短帖；投票选项需相互可区分，不编造观众反馈。"
+    }
+  },
+  "blog": {
+    "tone": "clear, durable, reusable",
+    "paragraph": "content-led",
+    "title": "accurate and searchable",
+    "structure": "conflict_breakdown or experience_review; durable over timely.",
+    "opening": "state the problem clearly and concretely.",
+    "ending": "leave the reader with a reusable judgment.",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "editorial",
+      "rule": "use visuals only when they help explain."
+    },
+    "notes": [
+      "avoid platform-only hooks",
+      "keep a stable structure",
+      "include concrete examples when available"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "独立博客",
+      "region": "general",
+      "family": "article",
+      "native_note": "按 CMS 编辑器选择 Markdown 或富文本；图片补替代文本，代码和表格检查移动端溢出。"
+    }
+  },
+  "seo_article": {
+    "tone": "useful, searchable, specific",
+    "paragraph": "structured for scanning",
+    "title": "query-matched but natural",
+    "structure": "question-answer structure with concrete examples.",
+    "opening": "answer search intent early.",
+    "ending": "summarize decision criteria, not vague benefits.",
+    "visual": {
+      "cover_ratio": "16:9",
+      "default_style": "infographic",
+      "rule": "tables, diagrams, or comparison visuals are preferred over decorative images."
+    },
+    "notes": [
+      "avoid keyword stuffing",
+      "answer the search intent early",
+      "keep examples and claims verifiable"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "搜索型文章",
+      "region": "general",
+      "family": "article",
+      "native_note": "首段回应搜索意图，小标题按真实问题组织；比较、FAQ 和来源必须有真实内容，不堆关键词。"
+    }
+  },
+  "generic": {
+    "tone": "清晰、自然、可复用",
+    "paragraph": "按内容需要决定",
+    "title": "准确表达主题",
+    "structure": "先保证清楚、具体、可负责，再考虑传播。",
+    "opening": "从具体问题进入。",
+    "ending": "停在具体判断。",
+    "visual": {
+      "cover_ratio": "none",
+      "default_style": "none",
+      "rule": "默认不需要视觉包装。"
+    },
+    "notes": [
+      "不做平台化包装",
+      "保留纯净版本"
+    ],
+    "layout": {
+      "default_format": "text",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "通用正文",
+      "region": "general",
+      "family": "article",
+      "native_note": "保留原文结构，不进行平台包装；仍需确认事实、语义和来源。"
+    }
+  },
+  "douyin_video": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "开场明确问题或看点",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "口播、字幕、画面分别准备，先给冲突或实际演示，不编造秒数和节奏测试结果。"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "short_post",
+        "text",
+        "long_form",
+        "thread"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "抖音视频",
+      "region": "domestic",
+      "family": "video",
+      "native_note": "口播、字幕、画面分别准备，先给冲突或实际演示，不编造秒数和节奏测试结果。"
+    }
+  },
+  "wechat_channels": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "开场明确问题或看点",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "标题、封面、简介与口播一致；转发理由来自具体信息，不用诱导分享换权益。"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "short_post",
+        "text",
+        "long_form",
+        "thread"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "微信视频号",
+      "region": "domestic",
+      "family": "video",
+      "native_note": "标题、封面、简介与口播一致；转发理由来自具体信息，不用诱导分享换权益。"
+    }
+  },
+  "weibo": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "首屏具体判断或场景",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "首段交代观点和上下文；话题、提及和链接在原生编辑器确认，长文不要硬塞入短帖。"
+    ],
+    "layout": {
+      "default_format": "short_post",
+      "formats": [
+        "short_post",
+        "text",
+        "thread",
+        "long_form",
+        "spoken"
+      ],
+      "content_order": [
+        "首屏具体判断或场景",
+        "必要背景",
+        "证据或方法",
+        "适用边界",
+        "有信息价值的讨论问题"
+      ],
+      "paragraph_method": "短段落之间留空行；避免每个词单独一行；列表仅用于并列步骤。",
+      "emphasis_method": "用准确的首句和自然分段强调；不默认 Markdown 会渲染，不使用花体 Unicode 假加粗。",
+      "media_method": "图片只补充上下文；有图片时写清说明和来源。",
+      "publishing_steps": [
+        "首段作为信息流入口，不把独立标题重复粘贴进正文",
+        "链接、标签按编辑器实际能力处理",
+        "预览折叠前首屏与换行",
+        "核对社区规则、事实与商业披露"
+      ],
+      "local_style": "short",
+      "label": "微博",
+      "region": "domestic",
+      "family": "feed",
+      "native_note": "首段交代观点和上下文；话题、提及和链接在原生编辑器确认，长文不要硬塞入短帖。"
+    }
+  },
+  "bilibili_video": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "开场明确问题或看点",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "简介写实际内容、来源和必要章节；没有时间轴不编造时间戳。"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "short_post",
+        "text",
+        "long_form",
+        "thread"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "哔哩哔哩视频",
+      "region": "domestic",
+      "family": "video",
+      "native_note": "简介写实际内容、来源和必要章节；没有时间轴不编造时间戳。"
+    }
+  },
+  "csdn": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "标题与导读",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "保留环境版本、代码块与运行证据；目录按已有小标题生成，不伪造测试结果。"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "CSDN",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "保留环境版本、代码块与运行证据；目录按已有小标题生成，不伪造测试结果。"
+    }
+  },
+  "jianshu": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "标题与导读",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "叙事或论证自然分节；根据当前编辑器模式处理 Markdown，避免营销式重复导流。"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "简书",
+      "region": "domestic",
+      "family": "article",
+      "native_note": "叙事或论证自然分节；根据当前编辑器模式处理 Markdown，避免营销式重复导流。"
+    }
+  },
+  "linkedin_article": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "标题与导读",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "标题、封面和正文分开；工作案例说明决策、约束和可复用结论。"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "text",
+        "short_post",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "标题与导读",
+        "具体问题或判断",
+        "小标题分节推进",
+        "证据、例子与限制条件",
+        "具体结论及来源"
+      ],
+      "paragraph_method": "每段围绕一个判断；按内容转折分节，不逐句断行，不伪造小标题。",
+      "emphasis_method": "原生编辑器的小标题、少量加粗和引用；避免整段加粗、多色和装饰分隔线。",
+      "media_method": "解释性配图放在相关段落后，保留来源、图注与可访问性说明；未提供素材时只规划，不生成虚假证据图。",
+      "publishing_steps": [
+        "标题和摘要分别填入原生字段",
+        "将正文导入编辑器并核对小标题、引用、链接、代码",
+        "移动端预览图注和断行",
+        "检查事实、来源及商业内容披露"
+      ],
+      "local_style": "preserve",
+      "label": "LinkedIn 文章",
+      "region": "international",
+      "family": "article",
+      "native_note": "标题、封面和正文分开；工作案例说明决策、约束和可复用结论。"
+    }
+  },
+  "threads": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "首条明确主题与承诺",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "首条清晰、回复连续；当前字符、附件和链接能力以账户编辑器为准。"
+    ],
+    "layout": {
+      "default_format": "thread",
+      "formats": [
+        "thread",
+        "short_post",
+        "text",
+        "long_form",
+        "spoken"
+      ],
+      "content_order": [
+        "首条明确主题与承诺",
+        "每条推进一个判断",
+        "依据与实例紧随判断",
+        "末条具体结论与边界"
+      ],
+      "paragraph_method": "每条能独立理解且与前条连贯；不按固定字符机械截断，不遗漏后半篇。",
+      "emphasis_method": "可用连续序号，计数包括序号、链接及平台特殊字符权重。",
+      "media_method": "图与对应条目同发，图注来源紧随图片；无图也应能理解。",
+      "publishing_steps": [
+        "逐条粘贴 blocks 而非整段 body",
+        "以平台编辑器真实计数检查每条长度",
+        "超限回到编辑修订，不静默截断",
+        "检查顺序、上下文、来源和回复权限"
+      ],
+      "local_style": "thread",
+      "label": "Threads",
+      "region": "international",
+      "family": "thread",
+      "native_note": "首条清晰、回复连续；当前字符、附件和链接能力以账户编辑器为准。"
+    }
+  },
+  "instagram_reels": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "开场明确问题或看点",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "口播与字幕配合真实画面；检查封面裁切与按钮安全区，不把 caption 当成逐字字幕。"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "short_post",
+        "text",
+        "long_form",
+        "thread"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "Instagram Reels",
+      "region": "international",
+      "family": "video",
+      "native_note": "口播与字幕配合真实画面；检查封面裁切与按钮安全区，不把 caption 当成逐字字幕。"
+    }
+  },
+  "youtube": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "开场明确问题或看点",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "标题与缩略图兑现内容；简介先说明价值再放来源；章节仅依据真实时间轴。"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "short_post",
+        "text",
+        "long_form",
+        "thread"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "YouTube 长视频",
+      "region": "international",
+      "family": "video",
+      "native_note": "标题与缩略图兑现内容；简介先说明价值再放来源；章节仅依据真实时间轴。"
+    }
+  },
+  "youtube_shorts": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "开场明确问题或看点",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "围绕一个清晰主题组织短视频；实际时长、画幅和版权资格在上传时核查，不仅凭文稿判断。"
+    ],
+    "layout": {
+      "default_format": "script",
+      "formats": [
+        "script",
+        "spoken",
+        "short_post",
+        "text",
+        "long_form",
+        "thread"
+      ],
+      "content_order": [
+        "开场明确问题或看点",
+        "必要背景",
+        "逐段证据、演示或动作",
+        "具体结论与限制",
+        "标题、简介及来源"
+      ],
+      "paragraph_method": "口播一行一个自然语义单位；字幕按语速和镜头分段，不能仅凭字符数伪造时间轴。",
+      "emphasis_method": "口播、屏幕文字、画面说明分开；字幕不能遮挡主体及平台按钮。",
+      "media_method": "镜头优先展示实际对象或过程；缺少拍摄素材时标记待补，不编造演示画面和观看时长。",
+      "publishing_steps": [
+        "按 blocks 整理口播，另行补充真实镜头与字幕时间",
+        "封面文字、视频标题和简介保持一致",
+        "在目标画幅预览字幕及按钮安全区",
+        "核对音乐、素材版权和商业披露"
+      ],
+      "local_style": "spoken",
+      "label": "YouTube Shorts",
+      "region": "international",
+      "family": "video",
+      "native_note": "围绕一个清晰主题组织短视频；实际时长、画幅和版权资格在上传时核查，不仅凭文稿判断。"
+    }
+  },
+  "facebook": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "首屏具体判断或场景",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "开头补足上下文，短段落可扫描；群组发布先查群规，不使用互动诱饵。"
+    ],
+    "layout": {
+      "default_format": "short_post",
+      "formats": [
+        "short_post",
+        "text",
+        "thread",
+        "long_form",
+        "spoken"
+      ],
+      "content_order": [
+        "首屏具体判断或场景",
+        "必要背景",
+        "证据或方法",
+        "适用边界",
+        "有信息价值的讨论问题"
+      ],
+      "paragraph_method": "短段落之间留空行；避免每个词单独一行；列表仅用于并列步骤。",
+      "emphasis_method": "用准确的首句和自然分段强调；不默认 Markdown 会渲染，不使用花体 Unicode 假加粗。",
+      "media_method": "图片只补充上下文；有图片时写清说明和来源。",
+      "publishing_steps": [
+        "首段作为信息流入口，不把独立标题重复粘贴进正文",
+        "链接、标签按编辑器实际能力处理",
+        "预览折叠前首屏与换行",
+        "核对社区规则、事实与商业披露"
+      ],
+      "local_style": "short",
+      "label": "Facebook",
+      "region": "international",
+      "family": "feed",
+      "native_note": "开头补足上下文，短段落可扫描；群组发布先查群规，不使用互动诱饵。"
+    }
+  },
+  "reddit": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "具体问题标题",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "先遵守 subreddit 规则；网页版与移动端编辑器可能不同，Markdown 是工作稿不是通用粘贴保证。"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "short_post",
+        "text",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "具体问题标题",
+        "背景与已尝试方法",
+        "证据和过程",
+        "明确问题或结论",
+        "来源、限制与利益关系"
+      ],
+      "paragraph_method": "围绕可讨论问题分段；技术内容保留代码、日志和复现步骤。",
+      "emphasis_method": "按社区编辑器选择富文本或 Markdown；发布预览后才确认渲染。",
+      "media_method": "截图裁去个人信息；保留必要上下文，避免广告式封面。",
+      "publishing_steps": [
+        "先查看版块规则、flair 和自推广限制",
+        "选择富文本或 Markdown 模式并预览",
+        "保留来源、代码格式与已尝试信息",
+        "披露关联关系，不跨版块复制灌水"
+      ],
+      "local_style": "preserve",
+      "label": "Reddit",
+      "region": "international",
+      "family": "forum",
+      "native_note": "先遵守 subreddit 规则；网页版与移动端编辑器可能不同，Markdown 是工作稿不是通用粘贴保证。"
+    }
+  },
+  "pinterest": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "封面明确主题且能兑现",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "Pin 标题、描述、图片文字与目标页面一致；说明图的实际用途，不堆搜索关键词。"
+    ],
+    "layout": {
+      "default_format": "carousel",
+      "formats": [
+        "carousel",
+        "short_post",
+        "text",
+        "spoken",
+        "thread",
+        "long_form"
+      ],
+      "content_order": [
+        "封面明确主题且能兑现",
+        "首张给场景与阅读理由",
+        "中间每张一个证据或步骤",
+        "末张给边界或行动",
+        "说明文字与相关标签"
+      ],
+      "paragraph_method": "卡片内一个主题；正文说明分短段，不把整篇长文塞入封面。",
+      "emphasis_method": "封面主题、卡片标题、正文三级层次；字号与对比度以手机预览可读为准。",
+      "media_method": "卡片序号连续、版式一致；检查平台裁切和安全区，不把推荐比例写成唯一允许尺寸。",
+      "publishing_steps": [
+        "按 blocks 顺序制作卡片并逐张复核",
+        "标题、说明、标签分别填写",
+        "预览封面裁切与每张可读性",
+        "检查事实、图片权利及商业披露"
+      ],
+      "local_style": "short",
+      "label": "Pinterest",
+      "region": "international",
+      "family": "carousel",
+      "native_note": "Pin 标题、描述、图片文字与目标页面一致；说明图的实际用途，不堆搜索关键词。"
+    }
+  },
+  "quora": {
+    "tone": "Concrete, accountable, audience-appropriate",
+    "title": "Accurate; no clickbait",
+    "opening": "具体问题标题",
+    "ending": "Specific conclusion with limits",
+    "notes": [
+      "首段直接回答原问题，后续给依据、例子与限制；引用来源并披露关联关系。"
+    ],
+    "layout": {
+      "default_format": "long_form",
+      "formats": [
+        "long_form",
+        "short_post",
+        "text",
+        "thread",
+        "spoken"
+      ],
+      "content_order": [
+        "具体问题标题",
+        "背景与已尝试方法",
+        "证据和过程",
+        "明确问题或结论",
+        "来源、限制与利益关系"
+      ],
+      "paragraph_method": "围绕可讨论问题分段；技术内容保留代码、日志和复现步骤。",
+      "emphasis_method": "按社区编辑器选择富文本或 Markdown；发布预览后才确认渲染。",
+      "media_method": "截图裁去个人信息；保留必要上下文，避免广告式封面。",
+      "publishing_steps": [
+        "先查看版块规则、flair 和自推广限制",
+        "选择富文本或 Markdown 模式并预览",
+        "保留来源、代码格式与已尝试信息",
+        "披露关联关系，不跨版块复制灌水"
+      ],
+      "local_style": "preserve",
+      "label": "Quora",
+      "region": "international",
+      "family": "forum",
+      "native_note": "首段直接回答原问题，后续给依据、例子与限制；引用来源并披露关联关系。"
+    }
+  }
+}

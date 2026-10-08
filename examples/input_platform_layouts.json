@@ -1,0 +1,13 @@
+{
+  "title": "发布前先核对标题与正文",
+  "language": "zh",
+  "raw_material": "发布前先核对标题和正文。标题承诺的内容需要在正文找到依据。图片里的文字也要一起检查。",
+  "platform_configs": {
+    "wechat": {"format": "long_form"},
+    "xiaohongshu": {"format": "carousel"},
+    "wechat_channels": {"format": "script"},
+    "linkedin": {"format": "short_post"},
+    "x_thread": {"format": "thread"},
+    "reddit": {"format": "long_form"}
+  }
+}

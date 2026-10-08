@@ -1,0 +1,13 @@
+{
+  "title": "AI 改稿别只删套话",
+  "platform": "xiaohongshu",
+  "language": "zh",
+  "target_reader": "用 AI 写小红书笔记但总觉得不自然的创作者",
+  "content_goal": "生成一篇短段落、有场景、有收藏价值的小红书笔记",
+  "core_opinion": "小红书笔记的 AI 味通常不是词太高级，而是没有真实使用场景和具体动作。",
+  "raw_material": "在当今时代，AI 写作正在全面提升内容创作效率。本文将探讨如何优化小红书笔记，让内容更自然、更有价值。总而言之，未来 AI 写作会越来越重要。",
+  "tone": "轻口语、实用、像真实创作者复盘",
+  "forbidden_style": "不要假亲密，不要夸张种草，不要空泛鸡血",
+  "max_rounds": 2,
+  "pass_score": 25
+}

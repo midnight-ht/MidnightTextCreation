@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Account Content Manager Configuration",
+  "type": "object",
+  "required": [
+    "accounts",
+    "bindings",
+    "styles"
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$"
+    },
+    "directory": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "draft",
+        "scheduled",
+        "processing",
+        "published",
+        "rejected",
+        "removed"
+      ]
+    }
+  },
+  "properties": {
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "output_dir": {
+            "$ref": "#/$defs/directory"
+          }
+        }
+      }
+    },
+    "styles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "zh",
+              "en"
+            ]
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "long_form",
+              "short_post",
+              "carousel",
+              "thread",
+              "script",
+              "spoken",
+              "text"
+            ]
+          },
+          "tone": {
+            "type": "string"
+          },
+          "target_reader": {
+            "type": "string"
+          },
+          "style_guidance": {
+            "type": "string"
+          },
+          "author_samples": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "forbidden_claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "review_thresholds": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "account_id",
+          "platform",
+          "expected_account",
+          "style_id",
+          "adapter"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "account_id": {
+            "$ref": "#/$defs/id"
+          },
+          "platform": {
+            "type": "string",
+            "enum": [
+              "wechat",
+              "toutiao",
+              "xiaohongshu",
+              "douyin_long_text",
+              "douyin_video",
+              "wechat_channels",
+              "weibo",
+              "zhihu",
+              "bilibili",
+              "bilibili_video",
+              "baijiahao",
+              "kuaishou",
+              "juejin",
+              "csdn",
+              "jianshu",
+              "medium",
+              "substack",
+              "linkedin",
+              "linkedin_article",
+              "x_thread",
+              "threads",
+              "instagram",
+              "instagram_reels",
+              "tiktok",
+              "youtube_community",
+              "youtube",
+              "youtube_shorts",
+              "facebook",
+              "reddit",
+              "pinterest",
+              "quora",
+              "blog",
+              "seo_article",
+              "generic"
+            ]
+          },
+          "expected_account": {
+            "type": "string",
+            "minLength": 1
+          },
+          "style_id": {
+            "$ref": "#/$defs/id"
+          },
+          "output_dir": {
+            "$ref": "#/$defs/directory"
+          },
+          "adapter": {
+            "type": "object",
+            "required": [
+              "mode"
+            ],
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "mock",
+                  "api",
+                  "browser"
+                ]
+              },
+              "editor_url": {
+                "type": "string"
+              },
+              "collector_url": {
+                "type": "string"
+              },
+              "endpoint": {
+                "type": "string"
+              },
+              "token_env": {
+                "type": "string",
+                "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+              },
+              "selectors": {
+                "type": "object"
+              },
+              "status_mapping": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/$defs/state"
+                }
+              },
+              "mock_status": {
+                "$ref": "#/$defs/state"
+              },
+              "mock_metrics": {
+                "type": "object"
+              },
+              "poll_interval": {
+                "type": "integer",
+                "minimum": 10,
+                "maximum": 86400
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

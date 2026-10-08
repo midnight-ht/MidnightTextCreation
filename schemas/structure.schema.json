@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "topic_tension": {
+      "type": "object",
+      "properties": {
+        "topic_strength": {
+          "type": "string",
+          "enum": ["weak", "usable", "strong"]
+        },
+        "core_tension": {
+          "type": "string"
+        },
+        "reader_mirror": {
+          "type": "string"
+        },
+        "counter_position": {
+          "type": "string"
+        },
+        "recommended_structure": {
+          "type": "string",
+          "enum": [
+            "conflict_breakdown",
+            "identity_mirror",
+            "opinion_reversal",
+            "experience_review"
+          ]
+        }
+      }
+    },
+    "opening_strategy": {
+      "type": "string"
+    },
+    "main_thesis": {
+      "type": "string"
+    },
+    "structure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_title": {
+            "type": "string"
+          },
+          "section_goal": {
+            "type": "string"
+          },
+          "key_points": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_needed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "length_weight": {
+            "type": "string",
+            "enum": [
+              "short",
+              "medium",
+              "long"
+            ]
+          }
+        },
+        "required": [
+          "section_title",
+          "section_goal",
+          "key_points",
+          "length_weight"
+        ]
+      }
+    },
+    "ending_strategy": {
+      "type": "string"
+    },
+    "do_not_write": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_to_collect": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "opening_strategy",
+    "main_thesis",
+    "structure",
+    "ending_strategy"
+  ]
+}
